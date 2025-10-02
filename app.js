@@ -72,6 +72,7 @@ app.use((req, res, next) => {
 });
 
 async function main() {
+  // await mongoose.connect('mongodb://127.0.0.1:27017/Wanderlust');
   await mongoose.connect(dbUrl);
 }
 main()
@@ -90,7 +91,6 @@ app.use("/", userRouter);
 //  /listings/:id/reviews actually this whole route resides inside app.js and doesn't go inside review.js so for that
 
 
-
 app.use((err, req, res, next) => {
   let { statusCode = 500, message = "Something went wrong" } = err;
   res.status(statusCode).render("error.ejs", { err });
@@ -99,3 +99,4 @@ app.use((err, req, res, next) => {
 app.listen(8080, () => {
   console.log("Server listening to port 8080");
 });
+
