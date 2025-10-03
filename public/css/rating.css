@@ -197,48 +197,5 @@
 }
 
 
-/* Tablet screens */
-@media (max-width: 768px) {
-  .starability-result,
-  .starability-slot {
-    width: 120px;
-    height: 24px;
-  }
 
-  .starability-slot > label {
-    width: 24px;
-    height: 24px;
-    background-size: 24px auto;
-  }
 
-  .starability-result {
-    background-size: 24px auto;
-  }
-
-  .starability-result:after {
-    background-size: 24px auto;
-  }
-}
-
-/* Mobile screens */
-@media (max-width: 480px) {
-  .starability-result,
-  .starability-slot {
-    width: 100px;
-    height: 20px;
-  }
-
-  .starability-slot > label {
-    width: 20px;
-    height: 20px;
-    background-size: 20px auto;
-  }
-
-  .starability-result {
-    background-size: 20px auto;
-  }
-
-  .starability-result:after {
-    background-size: 20px auto;
-  }
-}
